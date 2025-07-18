@@ -1,7 +1,13 @@
 :root {
-	--blue: #135dbd;
 	--lightblue: #94bfff;
-	--award-yellow: #e6be51;
+	--blue: #135dbd;
+	--darkblue: #0d3a7c;
+	--gray: #666;
+	--darkgray: #444;
+}
+
+html {
+	font-size: 28px; /* Base font size increased */
 }
 
 /* Minecraft Font*/
@@ -34,8 +40,6 @@
 	font-style: italic;
 }
 
-/* body */
-
 body {
 	display: flex;
 	align-items: center;
@@ -45,8 +49,8 @@ body {
 	background-color: #f0f0f0;
 	min-height: 100vh;
 	font-style: normal;
+	font-size: inherit;
 	padding-top: 60px; /* Space for fixed navbar */
-	zoom: 1.0; /* Fix for zoom issues in some browsers */
 }
 
 /* Navbar */
@@ -75,9 +79,10 @@ nav.navbar li {
 nav.navbar a {
 	color: #fff;
 	text-decoration: none;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	padding: 18px 0;
 	display: block;
+	margin: 0 35px; /* Adjusted for better spacing */
 	transition: color 0.2s;
 }
 
@@ -105,8 +110,10 @@ h1#title {
 	align-items: center;
 }
 
-p#subtitle {
+h2#subtitle {
 	color: var(--blue);
+	font-weight: normal;
+	font-style: normal;
 	font-size: 2.5rem;
 	letter-spacing: 1px;
 	text-shadow: 1px 1px 0 var(--lightblue), 2px 2px 0 var(--lightblue);
@@ -114,9 +121,12 @@ p#subtitle {
 	margin-bottom: 20px;
 }
 
+p {
+	max-width: 80%;
+}
+
 p.solo {
 	color: #000;
-	font-size: 1.25rem;
 	background: #e0e0e0;
 	padding: 12px 24px;
 	border-radius: 8px;
@@ -126,11 +136,15 @@ p.solo {
 	text-align: center;
 }
 
+a, a:hover, a:visited, a:active {
+  color: var(--blue);
+  text-decoration: none;
+ }
+
 name {
 	color: var(--blue);
-	font-weight: bold;
+	font-weight: normal;
 	font-style: italic;
-
 }
 
 code_box {
@@ -214,3 +228,13 @@ hide {
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
+
+/* Fixed logo at the bottom right */
+.logo-bottom-right {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 80px;
+            height: auto;
+            z-index: 1000;
+        }

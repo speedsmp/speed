@@ -108,6 +108,11 @@ h1#title {
 	margin-top: 40px;
 	margin-bottom: 10px;
 	align-items: center;
+	max-width: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
 
 h2#subtitle {
@@ -119,6 +124,11 @@ h2#subtitle {
 	text-shadow: 1px 1px 0 var(--lightblue), 2px 2px 0 var(--lightblue);
 	margin-top: 20px;
 	margin-bottom: 20px;
+	max-width: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
 
 p {

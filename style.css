@@ -4,6 +4,7 @@
 	--darkblue: #0d3a7c;
 	--gray: #666;
 	--darkgray: #444;
+	--gold: #eaba1a;
 }
 
 html {
@@ -256,6 +257,7 @@ hide {
     background-color: #fff;
     width: 90%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	position: relative;
 }
 	.activity-name {
             font-weight: bold;
@@ -279,3 +281,10 @@ hide {
             margin-top: 10px;
             font-size: 0.75rem;
         }
+	.event-link {
+		color: var(--blue);
+		text-decoration: underline;
+		position: absolute;
+		bottom: 15px;
+		right: 20px;
+	}
